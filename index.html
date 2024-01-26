@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <a href="https://rodrigo-dev.com/" target="_blank"
+          ><img class="logo" src="images/logo.png" alt="logo"
+        /></a>
+        <p>Rodrigo <span>| Front End Developer</span></p>
+      </div>
+      <h2>Alura Oracle One Challenge</h2>
+    </header>
+    <div class="title-container">
+      <h1 class="cyberpunk">Encriptador</h1>
+    </div>
+    <main>
+      <section>
+        <div>
+          <textarea
+            class="cyberborder"
+            type="text"
+            id="texto"
+            placeholder="Inserte el texto aqui"
+          ></textarea>
+          <div class="info-container">
+            <img class="alert-icon" src="images/alerta.png" alt="alert" />
+            <p class="cyberpunk">Solo letras minúsculas y sin acentos</p>
+          </div>
+          <div class="button-container">
+            <button class="cyberpunk2077" onclick="procesar('encriptar')">
+              Encriptar_
+            </button>
+            <button class="cyberpunk2077" onclick="procesar('desencriptar')">
+              Desencriptar_
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div class="cyberborder result-box" id="resultado">
+            <img class="result-img" src="images/result.gif" alt="" />
+          </div>
+
+          <button class="cyberpunk2077" onclick="copiarResultado()">
+            Copiar_
+          </button>
+        </div>
+      </section>
+    </main>
+    <div class="container-hr">
+      <hr class="cyberpunk gradient" />
+    </div>
+    <footer>
+      <h4 class="cyberpunk">Rodrigo | Front End Developer</h4>
+      <p>Copyright © 2024 RYF. All rights reserved.</p>
+      <div class="social-networks">
+        <a
+          href="https://www.linkedin.com/in/rodrigo-y%C3%A1%C3%B1ez-64a07428b"
+          target="_blank"
+        >
+          <img src="images/linkedin.svg" alt="linkedin" class="social-icons" />
+        </a>
+        <a href="https://github.com/TheRebelPath" target="_blank">
+          <img src="images/github.svg" alt="github" class="social-icons" />
+        </a>
+        <a
+          href="https://app.aluracursos.com/user/wintermute-ryf"
+          target="_blank"
+        >
+          <img src="images/alura.svg" alt="alura" class="social-icons" />
+        </a>
+      </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
